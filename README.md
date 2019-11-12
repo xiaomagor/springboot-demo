@@ -38,7 +38,7 @@ curl测试记录如下，可按顺序依次执行。
  #更新新增用户
  curl -X PUT -H "Content-Type: application/json" -d '{"userid":"user101101","username":"xiaomage001","balance":130.00}' http://localhost:8000/user/5
  
- #更新新增用户
+ #删除新增用户
  curl -X DELETE http://localhost:8000/user/5
   
 
