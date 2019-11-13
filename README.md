@@ -28,15 +28,21 @@ curl测试记录如下，可按顺序依次执行。
  curl http://localhost:8000/user/2
  {"id":2,"userid":"user2","username":"mic","balance":102.00}
  
- #新增用户
+ #新增用户 (curl for MacOS ,Linux)
  curl -H "Accept: application/json" -H "Content-type: application/json" -X POST -d '{"userid":"user101","username":"xiaomage","balance":120.00}' http://localhost:8000/user
+ 
+ #新增用户 (curl for windows)
+  curl -H "Accept: application/json" -H "Content-type: application/json" -X POST -d "{\"userid\":\"user101\",\"username\":\"xiaomage\",\"balance\":120.00}" http://localhost:8000/user
  
  #查询新增
  http://localhost:8000/user/5
  {"id":5,"userid":"user101","username":"xiaomage","balance":120.00}
  
- #更新新增用户
+ #更新新增用户 (curl for MacOS ,Linux)
  curl -X PUT -H "Content-Type: application/json" -d '{"userid":"user101101","username":"xiaomage001","balance":130.00}' http://localhost:8000/user/5
+ 
+ #更新新增用户 (curl for windows)
+ curl -X PUT -H "Content-Type: application/json" -d "{\"userid\":\"user101101\",\"username\":\"xiaomage001\",\"balance\":130.00}" http://localhost:8000/user/5
  
  #删除新增用户
  curl -X DELETE http://localhost:8000/user/5
