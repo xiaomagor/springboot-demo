@@ -4,7 +4,7 @@ sping boot demo 服务CURD （嵌入式数据库H2）
 
 - 运行环境  
 java 1.8+   
-window, linux , MaxOS
+Window, Linux , MacOS
 - 编译环境   
 java 1.8+  
 maven 3.25+
